@@ -1,5 +1,5 @@
 {
-  "name": "Fabulous Las Vegas Night",
+  "name": "Fabulous Las Vegas — After Dark",
   "type": "dark",
   "semanticHighlighting": true,
   "colors": {
@@ -393,37 +393,42 @@
     "panelInput.border": "#3D3650",
     "outputView.background": "#262230",
 
-    // ─── Status Bar — Fabulous Blue ──────────────────────────────────
-    "statusBar.background": "#00769B",
+    // ─── Status Bar — Roulette Red ──────────────────────────────────
+    "statusBar.background": "#C9122B",
     "statusBar.foreground": "#FFFFFF",
-    "statusBar.border": "#006483",
+    "statusBar.border": "#B00E25",
     "statusBar.focusBorder": "#FCBA05",
-    "statusBar.debuggingBackground": "#C9122B",
+    "statusBar.debuggingBackground": "#A04500",
     "statusBar.debuggingForeground": "#FFFFFF",
-    "statusBar.debuggingBorder": "#B00E25",
-    "statusBar.noFolderBackground": "#6B5A4A",
+    "statusBar.debuggingBorder": "#8A3B00",
+    "statusBar.noFolderBackground": "#4A3728",
     "statusBar.noFolderForeground": "#FFFFFF",
-    "statusBar.noFolderBorder": "#5A4A3A",
+    "statusBar.noFolderBorder": "#3A2A1A",
     "statusBarItem.activeBackground": "#FFFFFF20",
     "statusBarItem.hoverBackground": "#FFFFFF15",
     "statusBarItem.hoverForeground": "#FFFFFF",
     "statusBarItem.focusBorder": "#FCBA05",
     "statusBarItem.compactHoverBackground": "#FFFFFF20",
     "statusBarItem.prominentForeground": "#FFFFFF",
-    "statusBarItem.prominentBackground": "#006483",
+    "statusBarItem.prominentBackground": "#9E0F23",
     "statusBarItem.prominentHoverBackground": "#FFFFFF15",
     "statusBarItem.prominentHoverForeground": "#FFFFFF",
     "statusBarItem.remoteBackground": "#0E9783",
     "statusBarItem.remoteForeground": "#FFFFFF",
     "statusBarItem.remoteHoverBackground": "#0C8573",
-    "statusBarItem.errorBackground": "#C9122B",
-    "statusBarItem.errorForeground": "#FFFFFF",
-    "statusBarItem.errorHoverBackground": "#E0203A",
-    "statusBarItem.warningBackground": "#A04500",
+    "statusBarItem.remoteHoverForeground": "#FFFFFF",
+    "statusBarItem.errorBackground": "#FCBA05",
+    "statusBarItem.errorForeground": "#352A1D",
+    "statusBarItem.errorHoverBackground": "#E5A804",
+    "statusBarItem.errorHoverForeground": "#352A1D",
+    "statusBarItem.warningBackground": "#DD5F00",
     "statusBarItem.warningForeground": "#FFFFFF",
     "statusBarItem.warningHoverBackground": "#C05500",
+    "statusBarItem.warningHoverForeground": "#FFFFFF",
     "statusBarItem.offlineBackground": "#A89B8D",
     "statusBarItem.offlineForeground": "#1E1B24",
+    "statusBarItem.offlineHoverForeground": "#1E1B24",
+    "statusBarItem.offlineHoverBackground": "#B8A897",
 
     // ─── Title Bar ───────────────────────────────────────────────────
     "titleBar.activeBackground": "#262230",
@@ -687,7 +692,164 @@
     "editorCommentsWidget.unresolvedBorder": "#DD5F00",
     "editorCommentsWidget.rangeBackground": "#0090BE10",
     "editorCommentsWidget.rangeActiveBackground": "#0090BE18",
-    "editorCommentsWidget.replyInputBackground": "#262230"
+    "editorCommentsWidget.replyInputBackground": "#262230",
+
+    // ─── Radio Buttons ─────────────────────────────────────────────
+    "radio.activeForeground": "#FFFFFF",
+    "radio.activeBackground": "#0090BE",
+    "radio.activeBorder": "#0090BE",
+    "radio.inactiveForeground": "#E8DDD0",
+    "radio.inactiveBackground": "#262230",
+    "radio.inactiveBorder": "#3D3650",
+    "radio.inactiveHoverBackground": "#2A2636",
+
+    // ─── Additional List/Tree ──────────────────────────────────────
+    "list.dropBackground": "#0090BE20",
+    "list.focusAndSelectionOutline": "#0090BE",
+    "list.inactiveSelectionIconForeground": "#E8DDD0",
+    "list.inactiveFocusBackground": "#0090BE10",
+    "list.inactiveFocusOutline": "#0090BE40",
+    "list.dropBetweenBackground": "#0090BE",
+    "listFilterWidget.shadow": "#00000030",
+
+    // ─── Activity Bar Extras ───────────────────────────────────────
+    "activityBarTop.background": "#1E1B24",
+    "activityBarTop.activeBackground": "#0090BE10",
+    "activityWarningBadge.foreground": "#FFFFFF",
+    "activityWarningBadge.background": "#DD5F00",
+    "activityErrorBadge.foreground": "#FFFFFF",
+    "activityErrorBadge.background": "#F0455D",
+
+    // ─── Profiles ──────────────────────────────────────────────────
+    "profiles.sashBorder": "#0090BE",
+
+    // ─── Sidebar Extras ────────────────────────────────────────────
+    "sideBarActivityBarTop.border": "#3D3650",
+    "sideBarTitle.border": "#3D3650",
+    "sideBarStickyScroll.shadow": "#00000020",
+
+    // ─── Minimap Extras ────────────────────────────────────────────
+    "minimap.infoHighlight": "#0090BE",
+
+    // ─── Editor Group Extras ───────────────────────────────────────
+    "editorGroupHeader.border": "#3D3650",
+    "editorGroup.emptyBackground": "#1E1B24",
+    "editorGroup.focusedEmptyBorder": "#0090BE",
+    "editorGroup.dropIntoPromptForeground": "#E8DDD0",
+    "editorGroup.dropIntoPromptBackground": "#262230",
+    "editorGroup.dropIntoPromptBorder": "#3D3650",
+
+    // ─── Tab Extras ────────────────────────────────────────────────
+    "tab.dragAndDropBorder": "#F0455D",
+    "tab.unfocusedHoverBackground": "#1E1B24",
+    "tab.unfocusedHoverForeground": "#F0455D80",
+
+    // ─── Multi-Cursor ──────────────────────────────────────────────
+    "editorMultiCursor.primary.foreground": "#F0455D",
+    "editorMultiCursor.primary.background": "#1E1B24",
+    "editorMultiCursor.secondary.foreground": "#F0455D80",
+    "editorMultiCursor.secondary.background": "#1E1B24",
+
+    // ─── Find Extras ───────────────────────────────────────────────
+    "editor.findMatchHighlightBorder": "#DD5F0050",
+    "editor.findRangeHighlightBorder": "#0090BE00",
+
+    // ─── Unicode Highlight ─────────────────────────────────────────
+    "editorUnicodeHighlight.border": "#DD5F00",
+    "editorUnicodeHighlight.background": "#DD5F0015",
+
+    // ─── Symbol Highlight ──────────────────────────────────────────
+    "editor.symbolHighlightBackground": "#0090BE20",
+    "editor.symbolHighlightBorder": "#0090BE40",
+
+    // ─── Bracket Pair Guides ───────────────────────────────────────
+    "editorBracketPairGuide.activeBackground1": "#F0455D60",
+    "editorBracketPairGuide.activeBackground2": "#0090BE60",
+    "editorBracketPairGuide.activeBackground3": "#0E978360",
+    "editorBracketPairGuide.activeBackground4": "#DD5F0060",
+    "editorBracketPairGuide.activeBackground5": "#D45D8560",
+    "editorBracketPairGuide.activeBackground6": "#B17C0060",
+    "editorBracketPairGuide.background1": "#F0455D20",
+    "editorBracketPairGuide.background2": "#0090BE20",
+    "editorBracketPairGuide.background3": "#0E978320",
+    "editorBracketPairGuide.background4": "#DD5F0020",
+    "editorBracketPairGuide.background5": "#D45D8520",
+    "editorBracketPairGuide.background6": "#B17C0020",
+
+    // ─── Overview Ruler Extras ─────────────────────────────────────
+    "editorOverviewRuler.rangeHighlightForeground": "#0090BE40",
+    "editorOverviewRuler.wordHighlightTextForeground": "#FCBA0560",
+    "editorOverviewRuler.commentForeground": "#958372",
+    "editorOverviewRuler.commentUnresolvedForeground": "#DD5F00",
+
+    // ─── Editor Widget Extras ──────────────────────────────────────
+    "editorSuggestWidget.selectedIconForeground": "#E8DDD0",
+    "editorSuggestWidgetStatus.foreground": "#A89B8D",
+    "editorStickyScroll.shadow": "#00000020",
+
+    // ─── Merge Editor ──────────────────────────────────────────────
+    "mergeEditor.change.background": "#0090BE15",
+    "mergeEditor.change.word.background": "#0090BE25",
+    "mergeEditor.conflict.unhandledUnfocused.border": "#DD5F00",
+    "mergeEditor.conflict.unhandledFocused.border": "#DD5F00",
+    "mergeEditor.conflict.handledUnfocused.border": "#0E978380",
+    "mergeEditor.conflict.handledFocused.border": "#0E9783",
+    "mergeEditor.conflict.handled.minimapOverViewRuler": "#0E9783",
+    "mergeEditor.conflict.unhandled.minimapOverViewRuler": "#DD5F00",
+    "mergeEditor.conflictingLines.background": "#DD5F0015",
+    "mergeEditor.changeBase.background": "#DD5F0010",
+    "mergeEditor.changeBase.word.background": "#DD5F0020",
+    "mergeEditor.conflict.input1.background": "#0E978320",
+    "mergeEditor.conflict.input2.background": "#0090BE20",
+
+    // ─── Multi-Diff Editor ─────────────────────────────────────────
+    "multiDiffEditor.headerBackground": "#2A2636",
+    "multiDiffEditor.background": "#262230",
+    "multiDiffEditor.border": "#3D3650",
+
+    // ─── Diff Editor Extras ────────────────────────────────────────
+    "diffEditor.border": "#3D3650",
+    "diffEditor.unchangedRegionShadow": "#00000030",
+    "diffEditor.move.border": "#0090BE60",
+    "diffEditor.moveActive.border": "#0090BE",
+
+    // ─── Chat Extras ───────────────────────────────────────────────
+    "chat.linesAddedForeground": "#0E9783",
+    "chat.linesRemovedForeground": "#F0455D",
+
+    // ─── Inline Chat Diff ──────────────────────────────────────────
+    "inlineChatDiff.inserted": "#0E978320",
+    "inlineChatDiff.removed": "#F0455D20",
+
+    // ─── Interactive Code ──────────────────────────────────────────
+    "interactive.activeCodeBorder": "#0090BE",
+    "interactive.inactiveCodeBorder": "#3D3650",
+
+    // ─── Panel Extras ──────────────────────────────────────────────
+    "panelTitle.border": "#3D365000",
+    "panelTitleBadge.background": "#F0455D",
+    "panelTitleBadge.foreground": "#FFFFFF",
+    "panelStickyScroll.shadow": "#00000020",
+    "outputViewStickyScroll.background": "#262230",
+
+    // ─── Terminal Extras ───────────────────────────────────────────
+    "terminal.findMatchHighlightBorder": "#DD5F0040",
+    "terminal.initialHintForeground": "#958372",
+    "terminalOverviewRuler.border": "#3D365000",
+    "terminalCommandGuide.foreground": "#3D365040",
+    "terminalStickyScroll.border": "#3D3650",
+
+    // ─── Testing Extras ────────────────────────────────────────────
+    "testing.message.error.decorationForeground": "#F0455D",
+    "testing.message.error.lineBackground": "#F0455D10",
+    "testing.message.info.decorationForeground": "#0090BE",
+    "testing.message.info.lineBackground": "#0090BE10",
+    "testing.messagePeekBorder": "#F0455D",
+    "testing.messagePeekHeaderBackground": "#F0455D15",
+    "testing.uncoveredBranchBackground": "#F0455D20",
+
+    // ─── Git Extras ────────────────────────────────────────────────
+    "git.blame.editorDecorationForeground": "#958372"
   },
   "tokenColors": [
     // ─── Comments — Rat Pack Sand (muted, italic, 4.74:1) ───────────

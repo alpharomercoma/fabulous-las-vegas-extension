@@ -13,12 +13,12 @@
   "contributes": {
     "themes": [
       {
-        "label": "Fabulous Las Vegas Day",
+        "label": "Fabulous Las Vegas — High Noon",
         "uiTheme": "vs",
         "path": "./themes/las-vegas-day-color-theme.json"
       },
       {
-        "label": "Fabulous Las Vegas Night",
+        "label": "Fabulous Las Vegas — After Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/las-vegas-night-color-theme.json"
       }
