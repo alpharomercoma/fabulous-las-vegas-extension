@@ -3,7 +3,11 @@
   "displayName": "Fabulous Las Vegas",
   "description": "A vibrant VS Code theme inspired by the iconic Welcome to Fabulous Las Vegas Nevada sign — day and night editions",
   "version": "0.1.0",
-  "publisher": "Alpha Romer Coma <alpharomercoma@proton.me>",
+  "publisher": "alpharomercoma",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alpharomercoma/fabulous-las-vegas-extension"
+  },
   "engines": {
     "vscode": "^1.60.0"
   },
