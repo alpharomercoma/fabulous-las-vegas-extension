@@ -7,6 +7,12 @@ A VS Code color theme inspired by the iconic *Welcome to Fabulous Las Vegas Neva
 - **Fabulous Las Vegas — High Noon** (light)
 - **Fabulous Las Vegas — After Dark** (dark)
 
+### Preview
+
+| High Noon (light) | After Dark (dark) |
+|------------------|-------------------|
+| ![Fabulous Las Vegas — High Noon](light.png) | ![Fabulous Las Vegas — After Dark](dark.png) |
+
 ## Installation
 
 1. Open VS Code
