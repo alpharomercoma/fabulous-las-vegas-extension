@@ -76,5 +76,6 @@ jobs:
       - name: Trigger Release & Publish Extension
         env:
           VERSION: ${{ steps.bump.outputs.version }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           gh workflow run "Release & Publish Extension" --ref "v${VERSION}"
