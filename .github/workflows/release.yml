@@ -9,6 +9,8 @@ on:
   push:
     tags:
       - 'v*'
+  workflow_dispatch:
+    # Allows triggering from Bump Version (gh workflow run) or manually with a tag ref
 
 concurrency:
   group: release-${{ github.ref_name }}
@@ -37,6 +39,7 @@ jobs:
           if [ "$EVENT_NAME" = "release" ]; then
             TAG="$TAG_RELEASE"
           else
+            # push (tag) or workflow_dispatch (use ref, e.g. v0.1.2)
             TAG="$TAG_REF"
           fi
           VERSION="${TAG#v}"

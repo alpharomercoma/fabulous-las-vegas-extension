@@ -69,3 +69,17 @@ jobs:
         run: |
           git tag "v${VERSION}"
           git push origin "v${VERSION}"
+
+      - name: Create GitHub Release
+        env:
+          VERSION: ${{ steps.bump.outputs.version }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "v${VERSION}" --generate-notes
+
+      # Tag pushes from GITHUB_TOKEN do not trigger other workflows, so we trigger release explicitly
+      - name: Trigger Release & Publish Extension
+        env:
+          VERSION: ${{ steps.bump.outputs.version }}
+        run: |
+          gh workflow run "Release & Publish Extension" --ref "v${VERSION}"
