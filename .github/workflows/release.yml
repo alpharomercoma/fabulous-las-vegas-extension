@@ -101,7 +101,6 @@ jobs:
             echo "::error::VS_MARKETPLACE_TOKEN secret is not set"
             exit 1
           fi
-          npx @vscode/vsce verify-pat alpharomercoma
 
       - name: Download VSIX
         uses: actions/download-artifact@v7
@@ -129,7 +128,6 @@ jobs:
             echo "::error::OPEN_VSX_TOKEN secret is not set"
             exit 1
           fi
-          npx ovsx verify-pat -p "$OVSX_PAT"
 
       - name: Download VSIX
         uses: actions/download-artifact@v7
