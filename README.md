@@ -46,6 +46,28 @@ Restart VS Code and select the theme from **Preferences: Color Theme**.
 
 All syntax colors meet **WCAG AA** contrast requirements (minimum 4.5:1).
 
+## Publishing (CI)
+
+Publishing to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/) and the [Open VSX Registry](https://open-vsx.org/) is automated with GitHub Actions. The extension is **packaged once**, then **published to both registries in parallel**.
+
+### Setup
+
+1. **Visual Studio Marketplace** — Create a [Personal Access Token](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#get-a-personal-access-token) (Azure DevOps / marketplace) with **Marketplace (Publish)** scope. Add a repo secret: `VS_MARKETPLACE_TOKEN`.
+
+2. **Open VSX Registry** — [Create an Eclipse account](https://accounts.eclipse.org/user/register), link GitHub, sign the [Publisher Agreement](https://open-vsx.org/user-settings/profile), then create an [access token](https://open-vsx.org/user-settings/tokens). Create the namespace once (replace `alpharomercoma` and `<token>`):
+   ```bash
+   npx ovsx create-namespace -p alpharomercoma <token>
+   ```
+   Add a repo secret: `OPEN_VSX_TOKEN`.
+
+3. In the repo: **Settings → Secrets and variables → Actions** and ensure both `VS_MARKETPLACE_TOKEN` and `OPEN_VSX_TOKEN` are set.
+
+### How to release
+
+- **Option A — Bump version and publish:** **Actions → Bump Version** → Run workflow, choose `patch` / `minor` / `major`. The workflow bumps `package.json`, pushes the commit, creates a tag (e.g. `v0.1.2`), and **Release & Publish Extension** runs and publishes to both marketplaces in parallel.
+
+- **Option B — Publish an existing version:** Create a [GitHub Release](https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-your-repository) with a tag like `v0.1.2` (or push a tag: `git tag v0.1.2 && git push origin v0.1.2`). **Release & Publish Extension** sets `package.json` version from the tag and publishes to both registries.
+
 ## Author
 
 **Alpha Romer Coma** — [alpharomercoma@proton.me](mailto:alpharomercoma@proton.me)
