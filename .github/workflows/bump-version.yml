@@ -63,19 +63,14 @@ jobs:
           git commit -m "chore: bump version to $VERSION"
           git push
 
-      - name: Create and push tag
-        env:
-          VERSION: ${{ steps.bump.outputs.version }}
-        run: |
-          git tag "v${VERSION}"
-          git push origin "v${VERSION}"
-
-      - name: Create GitHub Release
+      - name: Create GitHub Release (creates tag automatically)
         env:
           VERSION: ${{ steps.bump.outputs.version }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh release create "v${VERSION}" --generate-notes
+          gh release create "v${VERSION}" \
+            --target "${{ github.ref_name }}" \
+            --generate-notes
 
       # Tag pushes from GITHUB_TOKEN do not trigger other workflows, so we trigger release explicitly
       - name: Trigger Release & Publish Extension
